@@ -1,0 +1,12 @@
+CompileFlags:
+  Add: [
+    "-ID:/REPOS/ForgeEngine/external/glad/include",
+    "-ID:/REPOS/ForgeEngine/external/freetype/include",
+    "-ID:/REPOS/ForgeEngine/external/glm",
+    "-ID:/REPOS/ForgeEngine/external/sdl3/include",
+    "-ID:/REPOS/ForgeEngine/external/sdl3_image/include",
+    "-ID:/REPOS/ForgeEngine/external/sdl3_ttf/include",
+    "-ID:/REPOS/ForgeEngine/external/imgui",
+    "-D_REENTRANT",
+    "-std=c++20"
+  ]

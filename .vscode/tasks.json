@@ -1,0 +1,21 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Check GLSL",
+            "type": "shell",
+            "command": "glslangValidator",
+            "args": [
+                "${file}",
+                "-S",
+                "vert",
+                "--target-env",
+                "opengl"
+            ],
+            "group": "build",
+            "presentation": {
+                "reveal": "always"
+            }
+        }
+    ]
+}

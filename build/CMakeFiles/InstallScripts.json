@@ -1,0 +1,8 @@
+{
+	"InstallScripts" : 
+	[
+		"D:/REPOS/ForgeEngine/build/cmake_install.cmake",
+		"D:/REPOS/ForgeEngine/build/external/glad/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

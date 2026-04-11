@@ -1,0 +1,7 @@
+D:/REPOS/ForgeEngine/build/CMakeFiles/imgui.dir
+D:/REPOS/ForgeEngine/build/CMakeFiles/app.dir
+D:/REPOS/ForgeEngine/build/CMakeFiles/edit_cache.dir
+D:/REPOS/ForgeEngine/build/CMakeFiles/rebuild_cache.dir
+D:/REPOS/ForgeEngine/build/external/glad/CMakeFiles/glad.dir
+D:/REPOS/ForgeEngine/build/external/glad/CMakeFiles/edit_cache.dir
+D:/REPOS/ForgeEngine/build/external/glad/CMakeFiles/rebuild_cache.dir
