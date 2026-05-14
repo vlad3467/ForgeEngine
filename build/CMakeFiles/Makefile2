@@ -109,7 +109,7 @@ external/glad/clean: external/glad/CMakeFiles/glad.dir/clean
 CMakeFiles/imgui.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\imgui.dir\build.make CMakeFiles/imgui.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\imgui.dir\build.make CMakeFiles/imgui.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\REPOS\ForgeEngine\build\CMakeFiles --progress-num=8,9,10,11,12 "Built target imgui"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\REPOS\ForgeEngine\build\CMakeFiles --progress-num=14,15,16,17,18 "Built target imgui"
 .PHONY : CMakeFiles/imgui.dir/all
 
 # Build rule for subdir invocation for target.
@@ -126,7 +126,7 @@ imgui: CMakeFiles/imgui.dir/rule
 # codegen rule for target.
 CMakeFiles/imgui.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\imgui.dir\build.make CMakeFiles/imgui.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\REPOS\ForgeEngine\build\CMakeFiles --progress-num=8,9,10,11,12 "Finished codegen for target imgui"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\REPOS\ForgeEngine\build\CMakeFiles --progress-num=14,15,16,17,18 "Finished codegen for target imgui"
 .PHONY : CMakeFiles/imgui.dir/codegen
 
 # clean rule for target.
@@ -142,12 +142,12 @@ CMakeFiles/app.dir/all: CMakeFiles/imgui.dir/all
 CMakeFiles/app.dir/all: external/glad/CMakeFiles/glad.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\app.dir\build.make CMakeFiles/app.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\app.dir\build.make CMakeFiles/app.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\REPOS\ForgeEngine\build\CMakeFiles --progress-num=1,2,3,4,5 "Built target app"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\REPOS\ForgeEngine\build\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11 "Built target app"
 .PHONY : CMakeFiles/app.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/app.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\REPOS\ForgeEngine\build\CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\REPOS\ForgeEngine\build\CMakeFiles 18
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/app.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\REPOS\ForgeEngine\build\CMakeFiles 0
 .PHONY : CMakeFiles/app.dir/rule
@@ -159,7 +159,7 @@ app: CMakeFiles/app.dir/rule
 # codegen rule for target.
 CMakeFiles/app.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\app.dir\build.make CMakeFiles/app.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\REPOS\ForgeEngine\build\CMakeFiles --progress-num=1,2,3,4,5 "Finished codegen for target app"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\REPOS\ForgeEngine\build\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11 "Finished codegen for target app"
 .PHONY : CMakeFiles/app.dir/codegen
 
 # clean rule for target.
@@ -174,7 +174,7 @@ CMakeFiles/app.dir/clean:
 external/glad/CMakeFiles/glad.dir/all:
 	$(MAKE) $(MAKESILENT) -f external\glad\CMakeFiles\glad.dir\build.make external/glad/CMakeFiles/glad.dir/depend
 	$(MAKE) $(MAKESILENT) -f external\glad\CMakeFiles\glad.dir\build.make external/glad/CMakeFiles/glad.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\REPOS\ForgeEngine\build\CMakeFiles --progress-num=6,7 "Built target glad"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\REPOS\ForgeEngine\build\CMakeFiles --progress-num=12,13 "Built target glad"
 .PHONY : external/glad/CMakeFiles/glad.dir/all
 
 # Build rule for subdir invocation for target.
@@ -191,7 +191,7 @@ glad: external/glad/CMakeFiles/glad.dir/rule
 # codegen rule for target.
 external/glad/CMakeFiles/glad.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f external\glad\CMakeFiles\glad.dir\build.make external/glad/CMakeFiles/glad.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\REPOS\ForgeEngine\build\CMakeFiles --progress-num=6,7 "Finished codegen for target glad"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\REPOS\ForgeEngine\build\CMakeFiles --progress-num=12,13 "Finished codegen for target glad"
 .PHONY : external/glad/CMakeFiles/glad.dir/codegen
 
 # clean rule for target.

@@ -7,6 +7,9 @@ CompileFlags:
     "-ID:/REPOS/ForgeEngine/external/sdl3_image/include",
     "-ID:/REPOS/ForgeEngine/external/sdl3_ttf/include",
     "-ID:/REPOS/ForgeEngine/external/imgui",
+    "-ID:/REPOS/ForgeEngine/code/include",
+
     "-D_REENTRANT",
+    "-xc++",
     "-std=c++20"
   ]

@@ -1,0 +1,8 @@
+[
+{
+  "directory": "D:/REPOS/ForgeEngine/build/external/glad",
+  "command": "C:\\msys64\\mingw64\\bin\\cc.exe  @CMakeFiles/glad.dir/includes_C.rsp  -o CMakeFiles\\glad.dir\\src\\glad.c.obj -c D:\\REPOS\\ForgeEngine\\external\\glad\\src\\glad.c",
+  "file": "D:/REPOS/ForgeEngine/external/glad/src/glad.c",
+  "output": "external/glad/CMakeFiles/glad.dir/src/glad.c.obj"
+}
+]

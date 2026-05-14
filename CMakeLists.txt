@@ -30,10 +30,14 @@ add_library(imgui STATIC
 
 target_include_directories(imgui PUBLIC ${IMGUI_PATH})
 
+file(GLOB_RECURSE APP_SOURCES 
+    "${CMAKE_CURRENT_SOURCE_DIR}/code/src/*.cpp"
+)
+
 # Основное приложение
 add_executable(app 
-    code/src/main.cpp
-    code/src/shader.cpp
+    ${APP_SOURCES}
+
     ${IMGUI_PATH}/imgui_impl_sdl3.cpp
     ${IMGUI_PATH}/imgui_impl_opengl3.cpp
 )
@@ -80,12 +84,6 @@ target_link_libraries(app
     freetype_custom
     imgui
     glad
-)
-
-# Публичные определения
-target_compile_definitions(app PUBLIC 
-    RESOURCES_PATH="${CMAKE_CURRENT_SOURCE_DIR}/resources/"
-    SRC_PATH="${CMAKE_CURRENT_SOURCE_DIR}/src/"
 )
 
 # Glad

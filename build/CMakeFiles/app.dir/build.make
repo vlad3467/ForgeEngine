@@ -71,11 +71,116 @@ include CMakeFiles/app.dir/flags.make
 CMakeFiles/app.dir/codegen:
 .PHONY : CMakeFiles/app.dir/codegen
 
+CMakeFiles/app.dir/code/src/Engine.cpp.obj: CMakeFiles/app.dir/flags.make
+CMakeFiles/app.dir/code/src/Engine.cpp.obj: CMakeFiles/app.dir/includes_CXX.rsp
+CMakeFiles/app.dir/code/src/Engine.cpp.obj: D:/REPOS/ForgeEngine/code/src/Engine.cpp
+CMakeFiles/app.dir/code/src/Engine.cpp.obj: CMakeFiles/app.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\REPOS\ForgeEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/app.dir/code/src/Engine.cpp.obj"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/app.dir/code/src/Engine.cpp.obj -MF CMakeFiles\app.dir\code\src\Engine.cpp.obj.d -o CMakeFiles\app.dir\code\src\Engine.cpp.obj -c D:\REPOS\ForgeEngine\code\src\Engine.cpp
+
+CMakeFiles/app.dir/code/src/Engine.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/app.dir/code/src/Engine.cpp.i"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\REPOS\ForgeEngine\code\src\Engine.cpp > CMakeFiles\app.dir\code\src\Engine.cpp.i
+
+CMakeFiles/app.dir/code/src/Engine.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/app.dir/code/src/Engine.cpp.s"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\REPOS\ForgeEngine\code\src\Engine.cpp -o CMakeFiles\app.dir\code\src\Engine.cpp.s
+
+CMakeFiles/app.dir/code/src/Grid.cpp.obj: CMakeFiles/app.dir/flags.make
+CMakeFiles/app.dir/code/src/Grid.cpp.obj: CMakeFiles/app.dir/includes_CXX.rsp
+CMakeFiles/app.dir/code/src/Grid.cpp.obj: D:/REPOS/ForgeEngine/code/src/Grid.cpp
+CMakeFiles/app.dir/code/src/Grid.cpp.obj: CMakeFiles/app.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\REPOS\ForgeEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/app.dir/code/src/Grid.cpp.obj"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/app.dir/code/src/Grid.cpp.obj -MF CMakeFiles\app.dir\code\src\Grid.cpp.obj.d -o CMakeFiles\app.dir\code\src\Grid.cpp.obj -c D:\REPOS\ForgeEngine\code\src\Grid.cpp
+
+CMakeFiles/app.dir/code/src/Grid.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/app.dir/code/src/Grid.cpp.i"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\REPOS\ForgeEngine\code\src\Grid.cpp > CMakeFiles\app.dir\code\src\Grid.cpp.i
+
+CMakeFiles/app.dir/code/src/Grid.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/app.dir/code/src/Grid.cpp.s"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\REPOS\ForgeEngine\code\src\Grid.cpp -o CMakeFiles\app.dir\code\src\Grid.cpp.s
+
+CMakeFiles/app.dir/code/src/Material.cpp.obj: CMakeFiles/app.dir/flags.make
+CMakeFiles/app.dir/code/src/Material.cpp.obj: CMakeFiles/app.dir/includes_CXX.rsp
+CMakeFiles/app.dir/code/src/Material.cpp.obj: D:/REPOS/ForgeEngine/code/src/Material.cpp
+CMakeFiles/app.dir/code/src/Material.cpp.obj: CMakeFiles/app.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\REPOS\ForgeEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/app.dir/code/src/Material.cpp.obj"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/app.dir/code/src/Material.cpp.obj -MF CMakeFiles\app.dir\code\src\Material.cpp.obj.d -o CMakeFiles\app.dir\code\src\Material.cpp.obj -c D:\REPOS\ForgeEngine\code\src\Material.cpp
+
+CMakeFiles/app.dir/code/src/Material.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/app.dir/code/src/Material.cpp.i"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\REPOS\ForgeEngine\code\src\Material.cpp > CMakeFiles\app.dir\code\src\Material.cpp.i
+
+CMakeFiles/app.dir/code/src/Material.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/app.dir/code/src/Material.cpp.s"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\REPOS\ForgeEngine\code\src\Material.cpp -o CMakeFiles\app.dir\code\src\Material.cpp.s
+
+CMakeFiles/app.dir/code/src/Model.cpp.obj: CMakeFiles/app.dir/flags.make
+CMakeFiles/app.dir/code/src/Model.cpp.obj: CMakeFiles/app.dir/includes_CXX.rsp
+CMakeFiles/app.dir/code/src/Model.cpp.obj: D:/REPOS/ForgeEngine/code/src/Model.cpp
+CMakeFiles/app.dir/code/src/Model.cpp.obj: CMakeFiles/app.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\REPOS\ForgeEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/app.dir/code/src/Model.cpp.obj"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/app.dir/code/src/Model.cpp.obj -MF CMakeFiles\app.dir\code\src\Model.cpp.obj.d -o CMakeFiles\app.dir\code\src\Model.cpp.obj -c D:\REPOS\ForgeEngine\code\src\Model.cpp
+
+CMakeFiles/app.dir/code/src/Model.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/app.dir/code/src/Model.cpp.i"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\REPOS\ForgeEngine\code\src\Model.cpp > CMakeFiles\app.dir\code\src\Model.cpp.i
+
+CMakeFiles/app.dir/code/src/Model.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/app.dir/code/src/Model.cpp.s"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\REPOS\ForgeEngine\code\src\Model.cpp -o CMakeFiles\app.dir\code\src\Model.cpp.s
+
+CMakeFiles/app.dir/code/src/ObjParser.cpp.obj: CMakeFiles/app.dir/flags.make
+CMakeFiles/app.dir/code/src/ObjParser.cpp.obj: CMakeFiles/app.dir/includes_CXX.rsp
+CMakeFiles/app.dir/code/src/ObjParser.cpp.obj: D:/REPOS/ForgeEngine/code/src/ObjParser.cpp
+CMakeFiles/app.dir/code/src/ObjParser.cpp.obj: CMakeFiles/app.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\REPOS\ForgeEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/app.dir/code/src/ObjParser.cpp.obj"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/app.dir/code/src/ObjParser.cpp.obj -MF CMakeFiles\app.dir\code\src\ObjParser.cpp.obj.d -o CMakeFiles\app.dir\code\src\ObjParser.cpp.obj -c D:\REPOS\ForgeEngine\code\src\ObjParser.cpp
+
+CMakeFiles/app.dir/code/src/ObjParser.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/app.dir/code/src/ObjParser.cpp.i"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\REPOS\ForgeEngine\code\src\ObjParser.cpp > CMakeFiles\app.dir\code\src\ObjParser.cpp.i
+
+CMakeFiles/app.dir/code/src/ObjParser.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/app.dir/code/src/ObjParser.cpp.s"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\REPOS\ForgeEngine\code\src\ObjParser.cpp -o CMakeFiles\app.dir\code\src\ObjParser.cpp.s
+
+CMakeFiles/app.dir/code/src/TextRenderer.cpp.obj: CMakeFiles/app.dir/flags.make
+CMakeFiles/app.dir/code/src/TextRenderer.cpp.obj: CMakeFiles/app.dir/includes_CXX.rsp
+CMakeFiles/app.dir/code/src/TextRenderer.cpp.obj: D:/REPOS/ForgeEngine/code/src/TextRenderer.cpp
+CMakeFiles/app.dir/code/src/TextRenderer.cpp.obj: CMakeFiles/app.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\REPOS\ForgeEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/app.dir/code/src/TextRenderer.cpp.obj"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/app.dir/code/src/TextRenderer.cpp.obj -MF CMakeFiles\app.dir\code\src\TextRenderer.cpp.obj.d -o CMakeFiles\app.dir\code\src\TextRenderer.cpp.obj -c D:\REPOS\ForgeEngine\code\src\TextRenderer.cpp
+
+CMakeFiles/app.dir/code/src/TextRenderer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/app.dir/code/src/TextRenderer.cpp.i"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\REPOS\ForgeEngine\code\src\TextRenderer.cpp > CMakeFiles\app.dir\code\src\TextRenderer.cpp.i
+
+CMakeFiles/app.dir/code/src/TextRenderer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/app.dir/code/src/TextRenderer.cpp.s"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\REPOS\ForgeEngine\code\src\TextRenderer.cpp -o CMakeFiles\app.dir\code\src\TextRenderer.cpp.s
+
+CMakeFiles/app.dir/code/src/Texture.cpp.obj: CMakeFiles/app.dir/flags.make
+CMakeFiles/app.dir/code/src/Texture.cpp.obj: CMakeFiles/app.dir/includes_CXX.rsp
+CMakeFiles/app.dir/code/src/Texture.cpp.obj: D:/REPOS/ForgeEngine/code/src/Texture.cpp
+CMakeFiles/app.dir/code/src/Texture.cpp.obj: CMakeFiles/app.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\REPOS\ForgeEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/app.dir/code/src/Texture.cpp.obj"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/app.dir/code/src/Texture.cpp.obj -MF CMakeFiles\app.dir\code\src\Texture.cpp.obj.d -o CMakeFiles\app.dir\code\src\Texture.cpp.obj -c D:\REPOS\ForgeEngine\code\src\Texture.cpp
+
+CMakeFiles/app.dir/code/src/Texture.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/app.dir/code/src/Texture.cpp.i"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\REPOS\ForgeEngine\code\src\Texture.cpp > CMakeFiles\app.dir\code\src\Texture.cpp.i
+
+CMakeFiles/app.dir/code/src/Texture.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/app.dir/code/src/Texture.cpp.s"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\REPOS\ForgeEngine\code\src\Texture.cpp -o CMakeFiles\app.dir\code\src\Texture.cpp.s
+
 CMakeFiles/app.dir/code/src/main.cpp.obj: CMakeFiles/app.dir/flags.make
 CMakeFiles/app.dir/code/src/main.cpp.obj: CMakeFiles/app.dir/includes_CXX.rsp
 CMakeFiles/app.dir/code/src/main.cpp.obj: D:/REPOS/ForgeEngine/code/src/main.cpp
 CMakeFiles/app.dir/code/src/main.cpp.obj: CMakeFiles/app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\REPOS\ForgeEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/app.dir/code/src/main.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\REPOS\ForgeEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/app.dir/code/src/main.cpp.obj"
 	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/app.dir/code/src/main.cpp.obj -MF CMakeFiles\app.dir\code\src\main.cpp.obj.d -o CMakeFiles\app.dir\code\src\main.cpp.obj -c D:\REPOS\ForgeEngine\code\src\main.cpp
 
 CMakeFiles/app.dir/code/src/main.cpp.i: cmake_force
@@ -86,26 +191,11 @@ CMakeFiles/app.dir/code/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/app.dir/code/src/main.cpp.s"
 	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\REPOS\ForgeEngine\code\src\main.cpp -o CMakeFiles\app.dir\code\src\main.cpp.s
 
-CMakeFiles/app.dir/code/src/shader.cpp.obj: CMakeFiles/app.dir/flags.make
-CMakeFiles/app.dir/code/src/shader.cpp.obj: CMakeFiles/app.dir/includes_CXX.rsp
-CMakeFiles/app.dir/code/src/shader.cpp.obj: D:/REPOS/ForgeEngine/code/src/shader.cpp
-CMakeFiles/app.dir/code/src/shader.cpp.obj: CMakeFiles/app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\REPOS\ForgeEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/app.dir/code/src/shader.cpp.obj"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/app.dir/code/src/shader.cpp.obj -MF CMakeFiles\app.dir\code\src\shader.cpp.obj.d -o CMakeFiles\app.dir\code\src\shader.cpp.obj -c D:\REPOS\ForgeEngine\code\src\shader.cpp
-
-CMakeFiles/app.dir/code/src/shader.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/app.dir/code/src/shader.cpp.i"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\REPOS\ForgeEngine\code\src\shader.cpp > CMakeFiles\app.dir\code\src\shader.cpp.i
-
-CMakeFiles/app.dir/code/src/shader.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/app.dir/code/src/shader.cpp.s"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\REPOS\ForgeEngine\code\src\shader.cpp -o CMakeFiles\app.dir\code\src\shader.cpp.s
-
 CMakeFiles/app.dir/external/imgui/imgui_impl_sdl3.cpp.obj: CMakeFiles/app.dir/flags.make
 CMakeFiles/app.dir/external/imgui/imgui_impl_sdl3.cpp.obj: CMakeFiles/app.dir/includes_CXX.rsp
 CMakeFiles/app.dir/external/imgui/imgui_impl_sdl3.cpp.obj: D:/REPOS/ForgeEngine/external/imgui/imgui_impl_sdl3.cpp
 CMakeFiles/app.dir/external/imgui/imgui_impl_sdl3.cpp.obj: CMakeFiles/app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\REPOS\ForgeEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/app.dir/external/imgui/imgui_impl_sdl3.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\REPOS\ForgeEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/app.dir/external/imgui/imgui_impl_sdl3.cpp.obj"
 	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/app.dir/external/imgui/imgui_impl_sdl3.cpp.obj -MF CMakeFiles\app.dir\external\imgui\imgui_impl_sdl3.cpp.obj.d -o CMakeFiles\app.dir\external\imgui\imgui_impl_sdl3.cpp.obj -c D:\REPOS\ForgeEngine\external\imgui\imgui_impl_sdl3.cpp
 
 CMakeFiles/app.dir/external/imgui/imgui_impl_sdl3.cpp.i: cmake_force
@@ -120,7 +210,7 @@ CMakeFiles/app.dir/external/imgui/imgui_impl_opengl3.cpp.obj: CMakeFiles/app.dir
 CMakeFiles/app.dir/external/imgui/imgui_impl_opengl3.cpp.obj: CMakeFiles/app.dir/includes_CXX.rsp
 CMakeFiles/app.dir/external/imgui/imgui_impl_opengl3.cpp.obj: D:/REPOS/ForgeEngine/external/imgui/imgui_impl_opengl3.cpp
 CMakeFiles/app.dir/external/imgui/imgui_impl_opengl3.cpp.obj: CMakeFiles/app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\REPOS\ForgeEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/app.dir/external/imgui/imgui_impl_opengl3.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\REPOS\ForgeEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/app.dir/external/imgui/imgui_impl_opengl3.cpp.obj"
 	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/app.dir/external/imgui/imgui_impl_opengl3.cpp.obj -MF CMakeFiles\app.dir\external\imgui\imgui_impl_opengl3.cpp.obj.d -o CMakeFiles\app.dir\external\imgui\imgui_impl_opengl3.cpp.obj -c D:\REPOS\ForgeEngine\external\imgui\imgui_impl_opengl3.cpp
 
 CMakeFiles/app.dir/external/imgui/imgui_impl_opengl3.cpp.i: cmake_force
@@ -133,16 +223,28 @@ CMakeFiles/app.dir/external/imgui/imgui_impl_opengl3.cpp.s: cmake_force
 
 # Object files for target app
 app_OBJECTS = \
+"CMakeFiles/app.dir/code/src/Engine.cpp.obj" \
+"CMakeFiles/app.dir/code/src/Grid.cpp.obj" \
+"CMakeFiles/app.dir/code/src/Material.cpp.obj" \
+"CMakeFiles/app.dir/code/src/Model.cpp.obj" \
+"CMakeFiles/app.dir/code/src/ObjParser.cpp.obj" \
+"CMakeFiles/app.dir/code/src/TextRenderer.cpp.obj" \
+"CMakeFiles/app.dir/code/src/Texture.cpp.obj" \
 "CMakeFiles/app.dir/code/src/main.cpp.obj" \
-"CMakeFiles/app.dir/code/src/shader.cpp.obj" \
 "CMakeFiles/app.dir/external/imgui/imgui_impl_sdl3.cpp.obj" \
 "CMakeFiles/app.dir/external/imgui/imgui_impl_opengl3.cpp.obj"
 
 # External object files for target app
 app_EXTERNAL_OBJECTS =
 
+app.exe: CMakeFiles/app.dir/code/src/Engine.cpp.obj
+app.exe: CMakeFiles/app.dir/code/src/Grid.cpp.obj
+app.exe: CMakeFiles/app.dir/code/src/Material.cpp.obj
+app.exe: CMakeFiles/app.dir/code/src/Model.cpp.obj
+app.exe: CMakeFiles/app.dir/code/src/ObjParser.cpp.obj
+app.exe: CMakeFiles/app.dir/code/src/TextRenderer.cpp.obj
+app.exe: CMakeFiles/app.dir/code/src/Texture.cpp.obj
 app.exe: CMakeFiles/app.dir/code/src/main.cpp.obj
-app.exe: CMakeFiles/app.dir/code/src/shader.cpp.obj
 app.exe: CMakeFiles/app.dir/external/imgui/imgui_impl_sdl3.cpp.obj
 app.exe: CMakeFiles/app.dir/external/imgui/imgui_impl_opengl3.cpp.obj
 app.exe: CMakeFiles/app.dir/build.make
@@ -152,7 +254,7 @@ app.exe: external/glad/libglad.a
 app.exe: CMakeFiles/app.dir/linkLibs.rsp
 app.exe: CMakeFiles/app.dir/objects1.rsp
 app.exe: CMakeFiles/app.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\REPOS\ForgeEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable app.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\REPOS\ForgeEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable app.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\app.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

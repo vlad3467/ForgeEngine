@@ -8,10 +8,11 @@ out vec2 texCoord;
 
 uniform mat4 uniModel;
 uniform mat4 uniView;
-uniform mat4 uniPerspective;
+uniform mat4 uniProjection;
+uniform mat4 uniTraitor;
 
 void main()
 {
-    gl_Position = uniPerspective * uniView * uniModel * vec4(pos, 1.0);
+    gl_Position = uniProjection * uniView * uniModel * vec4(pos, 1.0);
     texCoord = vec2(texture.x, 1.0 - texture.y);
 }

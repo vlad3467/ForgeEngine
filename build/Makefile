@@ -154,6 +154,174 @@ glad/fast:
 	$(MAKE) $(MAKESILENT) -f external\glad\CMakeFiles\glad.dir\build.make external/glad/CMakeFiles/glad.dir/build
 .PHONY : glad/fast
 
+code/src/Engine.obj: code/src/Engine.cpp.obj
+.PHONY : code/src/Engine.obj
+
+# target to build an object file
+code/src/Engine.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\app.dir\build.make CMakeFiles/app.dir/code/src/Engine.cpp.obj
+.PHONY : code/src/Engine.cpp.obj
+
+code/src/Engine.i: code/src/Engine.cpp.i
+.PHONY : code/src/Engine.i
+
+# target to preprocess a source file
+code/src/Engine.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\app.dir\build.make CMakeFiles/app.dir/code/src/Engine.cpp.i
+.PHONY : code/src/Engine.cpp.i
+
+code/src/Engine.s: code/src/Engine.cpp.s
+.PHONY : code/src/Engine.s
+
+# target to generate assembly for a file
+code/src/Engine.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\app.dir\build.make CMakeFiles/app.dir/code/src/Engine.cpp.s
+.PHONY : code/src/Engine.cpp.s
+
+code/src/Grid.obj: code/src/Grid.cpp.obj
+.PHONY : code/src/Grid.obj
+
+# target to build an object file
+code/src/Grid.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\app.dir\build.make CMakeFiles/app.dir/code/src/Grid.cpp.obj
+.PHONY : code/src/Grid.cpp.obj
+
+code/src/Grid.i: code/src/Grid.cpp.i
+.PHONY : code/src/Grid.i
+
+# target to preprocess a source file
+code/src/Grid.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\app.dir\build.make CMakeFiles/app.dir/code/src/Grid.cpp.i
+.PHONY : code/src/Grid.cpp.i
+
+code/src/Grid.s: code/src/Grid.cpp.s
+.PHONY : code/src/Grid.s
+
+# target to generate assembly for a file
+code/src/Grid.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\app.dir\build.make CMakeFiles/app.dir/code/src/Grid.cpp.s
+.PHONY : code/src/Grid.cpp.s
+
+code/src/Material.obj: code/src/Material.cpp.obj
+.PHONY : code/src/Material.obj
+
+# target to build an object file
+code/src/Material.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\app.dir\build.make CMakeFiles/app.dir/code/src/Material.cpp.obj
+.PHONY : code/src/Material.cpp.obj
+
+code/src/Material.i: code/src/Material.cpp.i
+.PHONY : code/src/Material.i
+
+# target to preprocess a source file
+code/src/Material.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\app.dir\build.make CMakeFiles/app.dir/code/src/Material.cpp.i
+.PHONY : code/src/Material.cpp.i
+
+code/src/Material.s: code/src/Material.cpp.s
+.PHONY : code/src/Material.s
+
+# target to generate assembly for a file
+code/src/Material.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\app.dir\build.make CMakeFiles/app.dir/code/src/Material.cpp.s
+.PHONY : code/src/Material.cpp.s
+
+code/src/Model.obj: code/src/Model.cpp.obj
+.PHONY : code/src/Model.obj
+
+# target to build an object file
+code/src/Model.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\app.dir\build.make CMakeFiles/app.dir/code/src/Model.cpp.obj
+.PHONY : code/src/Model.cpp.obj
+
+code/src/Model.i: code/src/Model.cpp.i
+.PHONY : code/src/Model.i
+
+# target to preprocess a source file
+code/src/Model.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\app.dir\build.make CMakeFiles/app.dir/code/src/Model.cpp.i
+.PHONY : code/src/Model.cpp.i
+
+code/src/Model.s: code/src/Model.cpp.s
+.PHONY : code/src/Model.s
+
+# target to generate assembly for a file
+code/src/Model.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\app.dir\build.make CMakeFiles/app.dir/code/src/Model.cpp.s
+.PHONY : code/src/Model.cpp.s
+
+code/src/ObjParser.obj: code/src/ObjParser.cpp.obj
+.PHONY : code/src/ObjParser.obj
+
+# target to build an object file
+code/src/ObjParser.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\app.dir\build.make CMakeFiles/app.dir/code/src/ObjParser.cpp.obj
+.PHONY : code/src/ObjParser.cpp.obj
+
+code/src/ObjParser.i: code/src/ObjParser.cpp.i
+.PHONY : code/src/ObjParser.i
+
+# target to preprocess a source file
+code/src/ObjParser.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\app.dir\build.make CMakeFiles/app.dir/code/src/ObjParser.cpp.i
+.PHONY : code/src/ObjParser.cpp.i
+
+code/src/ObjParser.s: code/src/ObjParser.cpp.s
+.PHONY : code/src/ObjParser.s
+
+# target to generate assembly for a file
+code/src/ObjParser.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\app.dir\build.make CMakeFiles/app.dir/code/src/ObjParser.cpp.s
+.PHONY : code/src/ObjParser.cpp.s
+
+code/src/TextRenderer.obj: code/src/TextRenderer.cpp.obj
+.PHONY : code/src/TextRenderer.obj
+
+# target to build an object file
+code/src/TextRenderer.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\app.dir\build.make CMakeFiles/app.dir/code/src/TextRenderer.cpp.obj
+.PHONY : code/src/TextRenderer.cpp.obj
+
+code/src/TextRenderer.i: code/src/TextRenderer.cpp.i
+.PHONY : code/src/TextRenderer.i
+
+# target to preprocess a source file
+code/src/TextRenderer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\app.dir\build.make CMakeFiles/app.dir/code/src/TextRenderer.cpp.i
+.PHONY : code/src/TextRenderer.cpp.i
+
+code/src/TextRenderer.s: code/src/TextRenderer.cpp.s
+.PHONY : code/src/TextRenderer.s
+
+# target to generate assembly for a file
+code/src/TextRenderer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\app.dir\build.make CMakeFiles/app.dir/code/src/TextRenderer.cpp.s
+.PHONY : code/src/TextRenderer.cpp.s
+
+code/src/Texture.obj: code/src/Texture.cpp.obj
+.PHONY : code/src/Texture.obj
+
+# target to build an object file
+code/src/Texture.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\app.dir\build.make CMakeFiles/app.dir/code/src/Texture.cpp.obj
+.PHONY : code/src/Texture.cpp.obj
+
+code/src/Texture.i: code/src/Texture.cpp.i
+.PHONY : code/src/Texture.i
+
+# target to preprocess a source file
+code/src/Texture.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\app.dir\build.make CMakeFiles/app.dir/code/src/Texture.cpp.i
+.PHONY : code/src/Texture.cpp.i
+
+code/src/Texture.s: code/src/Texture.cpp.s
+.PHONY : code/src/Texture.s
+
+# target to generate assembly for a file
+code/src/Texture.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\app.dir\build.make CMakeFiles/app.dir/code/src/Texture.cpp.s
+.PHONY : code/src/Texture.cpp.s
+
 code/src/main.obj: code/src/main.cpp.obj
 .PHONY : code/src/main.obj
 
@@ -177,30 +345,6 @@ code/src/main.s: code/src/main.cpp.s
 code/src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\app.dir\build.make CMakeFiles/app.dir/code/src/main.cpp.s
 .PHONY : code/src/main.cpp.s
-
-code/src/shader.obj: code/src/shader.cpp.obj
-.PHONY : code/src/shader.obj
-
-# target to build an object file
-code/src/shader.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\app.dir\build.make CMakeFiles/app.dir/code/src/shader.cpp.obj
-.PHONY : code/src/shader.cpp.obj
-
-code/src/shader.i: code/src/shader.cpp.i
-.PHONY : code/src/shader.i
-
-# target to preprocess a source file
-code/src/shader.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\app.dir\build.make CMakeFiles/app.dir/code/src/shader.cpp.i
-.PHONY : code/src/shader.cpp.i
-
-code/src/shader.s: code/src/shader.cpp.s
-.PHONY : code/src/shader.s
-
-# target to generate assembly for a file
-code/src/shader.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\app.dir\build.make CMakeFiles/app.dir/code/src/shader.cpp.s
-.PHONY : code/src/shader.cpp.s
 
 external/imgui/imgui.obj: external/imgui/imgui.cpp.obj
 .PHONY : external/imgui/imgui.obj
@@ -357,12 +501,30 @@ help:
 	@echo ... app
 	@echo ... glad
 	@echo ... imgui
+	@echo ... code/src/Engine.obj
+	@echo ... code/src/Engine.i
+	@echo ... code/src/Engine.s
+	@echo ... code/src/Grid.obj
+	@echo ... code/src/Grid.i
+	@echo ... code/src/Grid.s
+	@echo ... code/src/Material.obj
+	@echo ... code/src/Material.i
+	@echo ... code/src/Material.s
+	@echo ... code/src/Model.obj
+	@echo ... code/src/Model.i
+	@echo ... code/src/Model.s
+	@echo ... code/src/ObjParser.obj
+	@echo ... code/src/ObjParser.i
+	@echo ... code/src/ObjParser.s
+	@echo ... code/src/TextRenderer.obj
+	@echo ... code/src/TextRenderer.i
+	@echo ... code/src/TextRenderer.s
+	@echo ... code/src/Texture.obj
+	@echo ... code/src/Texture.i
+	@echo ... code/src/Texture.s
 	@echo ... code/src/main.obj
 	@echo ... code/src/main.i
 	@echo ... code/src/main.s
-	@echo ... code/src/shader.obj
-	@echo ... code/src/shader.i
-	@echo ... code/src/shader.s
 	@echo ... external/imgui/imgui.obj
 	@echo ... external/imgui/imgui.i
 	@echo ... external/imgui/imgui.s
