@@ -24,6 +24,9 @@ private:
     int m_windowHeight = 720;
     bool m_running = false;
 
+    // Свет
+    float lightAmbient = 0.1f;
+
     // Ресурсы движка
     std::vector<std::unique_ptr<IModel>> m_objects;
     std::vector<std::unique_ptr<Material>> m_materials;

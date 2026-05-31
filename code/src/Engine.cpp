@@ -11,90 +11,104 @@
 // Инициализация
 // ========================================
 bool Engine::Initialize(int width, int height, const char* title) {
-    m_windowWidth = width;
-    m_windowHeight = height;
+    try
+    {
+        m_windowWidth = width;
+        m_windowHeight = height;
 
-    // SDL
-    if (!SDL_Init(SDL_INIT_VIDEO)) {
-        SDL_Log("SDL_Init failed: %s", SDL_GetError());
+        // SDL
+        if (!SDL_Init(SDL_INIT_VIDEO)) {
+            SDL_Log("SDL_Init failed: %s", SDL_GetError());
+            Shutdown();
+            return false;
+        }
+
+        SDL_GL_SetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION, 3);
+        SDL_GL_SetAttribute(SDL_GL_CONTEXT_MINOR_VERSION, 3);
+        SDL_GL_SetAttribute(SDL_GL_CONTEXT_PROFILE_MASK, SDL_GL_CONTEXT_PROFILE_CORE);
+        SDL_GL_SetAttribute(SDL_GL_DOUBLEBUFFER, 1);
+        SDL_GL_SetAttribute(SDL_GL_DEPTH_SIZE, 24);
+
+        m_window = SDL_CreateWindow(title, width, height, 
+                                    SDL_WINDOW_OPENGL | SDL_WINDOW_RESIZABLE);
+        if (!m_window) {
+            SDL_Log("Window creation failed: %s", SDL_GetError());
+            Shutdown();
+            return false;
+        }
+
+        m_glContext = SDL_GL_CreateContext(m_window);
+        if (!m_glContext) {
+            SDL_Log("OpenGL context failed: %s", SDL_GetError());
+            Shutdown();
+            return false;
+        }
+
+        if (!gladLoadGLLoader((GLADloadproc)SDL_GL_GetProcAddress)) {
+            SDL_Log("GLAD init failed");
+            Shutdown();
+            return false;
+        }
+
+        glViewport(0, 0, width, height);
+        glEnable(GL_DEPTH_TEST);
+        glEnable(GL_BLEND);
+        glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+        glPixelStorei(GL_UNPACK_ALIGNMENT, 1);
+
+        glEnable(GL_CULL_FACE);
+        glCullFace(GL_BACK);
+        glFrontFace(GL_CCW); 
+
+        // ImGui
+        IMGUI_CHECKVERSION();
+        ImGui::CreateContext();
+        float scale = SDL_GetDisplayContentScale(SDL_GetPrimaryDisplay());
+        ImGui::GetStyle().ScaleAllSizes(scale);
+        ImGui::StyleColorsDark();
+
+        if (!ImGui_ImplSDL3_InitForOpenGL(m_window, m_glContext)) {
+            SDL_Log("ImGui SDL3 backend failed");
+            Shutdown();
+            return false;
+        }
+        if (!ImGui_ImplOpenGL3_Init("#version 330")) {
+            SDL_Log("ImGui OpenGL3 backend failed");
+            Shutdown();
+            return false;
+        }
+
+        m_textRenderer = std::make_unique<TextRenderer>(m_defaultFont);
+
+        // Шейдеры
+        Material* subsidiaryMaterial = CreateMaterial("For grid", "../code/shaders/vertexShaders/grid.vert", "../code/shaders/fragmentShaders/grid.frag");
+
+        m_gridShader = subsidiaryMaterial->loadShader(
+            "../code/shaders/vertexShaders/grid.vert",
+            "../code/shaders/fragmentShaders/grid.frag");
+
+        m_fpsShader = subsidiaryMaterial->CompileShaderProgram(
+            "../code/shaders/vertexShaders/fpsText.vert",
+            "../code/shaders/fragmentShaders/fpsText.frag");
+
+        m_grid = std::make_unique<Grid>(100, 1);
+        m_grid->SetMaterial(subsidiaryMaterial);
+
+        // Инициализация камеры
+        glm::vec3 direction;
+        direction.x = cos(glm::radians(m_yaw)) * cos(glm::radians(m_pitch));
+        direction.y = sin(glm::radians(m_pitch));
+        direction.z = sin(glm::radians(m_yaw)) * cos(glm::radians(m_pitch));
+        m_cameraFront = glm::normalize(direction);
+
+        std::cout << "Engine initialized successfully!\n";
+        return true;
+    }
+    catch (const std::exception& e) {
+        SDL_Log("Unexpected error during initialization: %s", e.what());
+        Shutdown();
         return false;
     }
-
-    SDL_GL_SetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION, 3);
-    SDL_GL_SetAttribute(SDL_GL_CONTEXT_MINOR_VERSION, 3);
-    SDL_GL_SetAttribute(SDL_GL_CONTEXT_PROFILE_MASK, SDL_GL_CONTEXT_PROFILE_CORE);
-    SDL_GL_SetAttribute(SDL_GL_DOUBLEBUFFER, 1);
-    SDL_GL_SetAttribute(SDL_GL_DEPTH_SIZE, 24);
-
-    m_window = SDL_CreateWindow(title, width, height, 
-                                SDL_WINDOW_OPENGL | SDL_WINDOW_RESIZABLE);
-    if (!m_window) {
-        SDL_Log("Window creation failed: %s", SDL_GetError());
-        return false;
-    }
-
-    m_glContext = SDL_GL_CreateContext(m_window);
-    if (!m_glContext) {
-        SDL_Log("OpenGL context failed: %s", SDL_GetError());
-        return false;
-    }
-
-    if (!gladLoadGLLoader((GLADloadproc)SDL_GL_GetProcAddress)) {
-        SDL_Log("GLAD init failed");
-        return false;
-    }
-
-    glViewport(0, 0, width, height);
-    glEnable(GL_DEPTH_TEST);
-    glEnable(GL_BLEND);
-    glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
-    glPixelStorei(GL_UNPACK_ALIGNMENT, 1);
-
-    glEnable(GL_CULL_FACE);
-    glCullFace(GL_BACK);
-    glFrontFace(GL_CCW); 
-
-    // ImGui
-    IMGUI_CHECKVERSION();
-    ImGui::CreateContext();
-    float scale = SDL_GetDisplayContentScale(SDL_GetPrimaryDisplay());
-    ImGui::GetStyle().ScaleAllSizes(scale);
-    ImGui::StyleColorsDark();
-
-    if (!ImGui_ImplSDL3_InitForOpenGL(m_window, m_glContext)) {
-        SDL_Log("ImGui SDL3 backend failed");
-        return false;
-    }
-    if (!ImGui_ImplOpenGL3_Init("#version 330")) {
-        SDL_Log("ImGui OpenGL3 backend failed");
-        return false;
-    }
-
-    m_textRenderer = std::make_unique<TextRenderer>(m_defaultFont);
-
-    // Шейдеры
-    Material* subsidiaryMaterial = CreateMaterial("For grid", "../code/shaders/vertexShaders/grid.vert", "../code/shaders/fragmentShaders/grid.frag");
-
-    m_gridShader = subsidiaryMaterial->loadShader(
-        "../code/shaders/vertexShaders/grid.vert",
-        "../code/shaders/fragmentShaders/grid.frag");
-    
-    m_fpsShader = subsidiaryMaterial->CompileShaderProgram(
-        "../code/shaders/vertexShaders/fpsText.vert",
-        "../code/shaders/fragmentShaders/fpsText.frag");
-
-    m_grid = std::make_unique<Grid>(100, 1);
-    m_grid->SetMaterial(subsidiaryMaterial);
-
-    // Инициализация камеры
-    glm::vec3 direction;
-    direction.x = cos(glm::radians(m_yaw)) * cos(glm::radians(m_pitch));
-    direction.y = sin(glm::radians(m_pitch));
-    direction.z = sin(glm::radians(m_yaw)) * cos(glm::radians(m_pitch));
-    m_cameraFront = glm::normalize(direction);
-
-    std::cout << "Engine initialized successfully!\n";
-    return true;
 }
 
 // ========================================
